@@ -1,0 +1,12 @@
+core_cm0plus.h:741:22:__NVIC_EnableIRQ	16	static
+core_cm0plus.h:848:22:__NVIC_SetPriority	24	static
+bsp_lib.c:21:6:op_handler	8	static
+bsp_lib.c:51:6:char_finder	8	static
+bsp_lib.c:90:6:EXTI4_15_IRQHandler	16	static
+bsp_lib.c:163:6:state_handler	8	static
+bsp_lib.c:276:6:GPIOX_INIT	8	static
+bsp_lib.c:308:6:clear	8	static
+bsp_lib.c:314:6:display_numb	56	static
+bsp_lib.c:385:6:display_overflow	16	static
+bsp_lib.c:397:6:display_digit	16	static
+bsp_lib.c:421:6:delay	16	static

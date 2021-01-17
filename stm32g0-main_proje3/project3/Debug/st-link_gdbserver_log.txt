@@ -1,0 +1,566 @@
+[0.000] initConfigParams():  Configuration flags start
+[0.000] initConfigParams():   external-init                  false
+[0.000] initConfigParams():   pend-halt-timeout              (null)
+[0.000] initConfigParams():   halt                           false
+[0.000] initConfigParams():   config-file                    ""
+[0.000] initConfigParams():   persistent                     false
+[0.000] initConfigParams():  +log-file                       "C:\Users\akkay\STM32CubeIDE\workspace_1.4.0\stm32g0\blinky\Debug\st-link_gdbserver_log.txt"
+[0.000] initConfigParams():  +log-level                      31
+[0.000] initConfigParams():  +port-number                    612304
+[0.000] initConfigParams():  +verbose                        true
+[0.000] initConfigParams():   refresh-delay                  15
+[0.000] initConfigParams():  +verify                         true
+[0.000] initConfigParams():  +swd                            true
+[0.000] initConfigParams():   swo-port                       61234
+[0.000] initConfigParams():   cpu-clock                      8000000
+[0.000] initConfigParams():   swo-clock-div                  128
+[0.000] initConfigParams():   initialize-reset               false
+[0.000] initConfigParams():   debuggers                      false
+[0.000] initConfigParams():   serial-number                  ""
+[0.000] initConfigParams():  +apid                           0
+[0.000] initConfigParams():  +attach                         true
+[0.000] initConfigParams():   shared                         false
+[0.000] initConfigParams():   erase-all                      false
+[0.000] initConfigParams():   memory-map                     ""
+[0.000] initConfigParams():   ext-memory-loaders             false
+[0.000] initConfigParams():  +extload                        "512W3A_STM3210E-EVAL.stldr"
+[0.000] initConfigParams():  +stm32cubeprogrammer-path       "C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin"
+[0.000] initConfigParams():   temp-path                      ""
+[0.000] initConfigParams():   preserve-temps                 false
+[0.000] initConfigParams():  +frequency                      140
+[0.000] initConfigParams():   licenses                       false
+[0.000] initConfigParams():   ignore-rest                    false
+[0.000] initConfigParams():   version                        false
+[0.000] initConfigParams():   help                           false
+[0.000] initConfigParams():  Configuration flags end
+[0.002] init():  STMicroelectronics ST-LINK GDB server. Version 5.6.0
+Copyright (c) 2020, STMicroelectronics. All rights reserved.
+[0.017] Device_Initialise():  Target connection mode: Attach
+[0.024] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[0.027] Device_Initialise():  COM frequency = 125 kHz
+[0.027] Device_Initialise():  ST-LINK Firmware version : V2J37M26
+[0.027] Device_Initialise():  Device ID: 0x466
+[0.029] Device_Initialise():  PC: 0x75fa14
+[0.033] Device_GetStatus():  ST-LINK device status: RUN_MODE
+[0.033] Device_Initialise():  ST-LINK detects target voltage = 3.24 V
+[0.041] Device_Initialise():  ST-LINK device status: RUN_MODE
+[0.041] initServerContext():  ST-LINK device initialization OK
+[0.043] WaitConnection():  Waiting for connection on port 22480...
+[2.180] WaitConnection():  Accepted connection on port 22480...
+[2.182] haltOnConnect():  Try halt...
+[2.186] read():  <524> Rx: +$qSupported:multiprocess+;swbreak+;hwbreak+;qRelocInsn+;fork-events+;vfork-events+;exec-events+;vContSupported+;QThreadEvents+;no-resumed+#df
+[2.202] Device_GetStatus():  ST-LINK device status: HALT_MODE
+[2.203] write():  <524> Tx: +
+[2.203] write():  <524> Tx: $PacketSize=c00;qXfer:memory-map:read+;qXfer:features:read+;QStartNoAckMode+;QNonStop+;qXfer:threads:read+;hwbreak+;swbreak+#f2
+[2.203] read():  <524> Rx: +
+[2.203] read():  <524> Rx: $vMustReplyEmpty#3a
+[2.203] write():  <524> Tx: +
+[2.203] write():  <524> Tx: $#00
+[2.203] read():  <524> Rx: +$QStartNoAckMode#b0
+[2.219] write():  <524> Tx: +
+[2.219] write():  <524> Tx: $OK#9a
+[2.219] read():  <524> Rx: +
+[2.219] read():  <524> Rx: $Hg0#df
+[2.219] write():  <524> Tx: $#00
+[2.219] read():  <524> Rx: $qXfer:features:read:target.xml:0,bfb#75
+[2.219] write():  <524> Tx: $l<?xml version="1.0"?><!-- Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.     Copying and distribution of this file, with or without modification,     are permitted in any medium without royalty provided the copyright     notice and this notice are preserved.  --><!DOCTYPE target SYSTEM "gdb-target.dtd"><target><feature name="org.gnu.gdb.arm.m-profile">  <reg name="r0" bitsize="32"/>  <reg name="r1" bitsize="32"/>  <reg name="r2" bitsize="32"/>  <reg name="r3" bitsize="32"/>  <reg name="r4" bitsize="32"/>  <reg name="r5" bitsize="32"/>  <reg name="r6" bitsize="32"/>  <reg name="r7" bitsize="32"/>  <reg name="r8" bitsize="32"/>  <reg name="r9" bitsize="32"/>  <reg name="r10" bitsize="32"/>  <reg name="r11" bitsize="32"/>  <reg name="r12" bitsize="32"/>  <reg name="sp" bitsize="32" type="data_ptr"/>  <reg name="lr" bitsize="32"/>  <reg name="pc" bitsize="32" type="code_ptr"/>  <reg name="xpsr" bitsize="32" regnum="25"/>  <reg name="PRIMASK" bitsize="32" regnum="93"/>  <reg name="BASEPRI" bitsize="32" regnum="94"/>  <reg name="FAULTMASK" bitsize="32" regnum="95"/>  <reg name="CONTROL" bitsize="32" regnum="96"/>  <reg name="MSP" bitsize="32" type="data_ptr" regnum="97"/>  <reg name="PSP" bitsize="32" type="data_ptr" regnum="98"/>  </feature></target>#0f
+[2.220] read():  <524> Rx: $QNonStop:1#8d
+[2.220] write():  <524> Tx: $OK#9a
+[2.220] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[2.221] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[2.221] read():  <524> Rx: $qAttached#8f
+[2.221] write():  <524> Tx: $1#31
+[2.224] read():  <524> Rx: $qTStatus#49
+[2.225] write():  <524> Tx: $#00
+[2.225] read():  <524> Rx: $?#3f
+[2.225] write():  <524> Tx: $T05thread:1;core:0;#25
+[2.226] read():  <524> Rx: $vStopped#55
+[2.226] write():  <524> Tx: $OK#9a
+[2.228] read():  <524> Rx: $Hg1#e0
+[2.228] write():  <524> Tx: $#00
+[2.228] read():  <524> Rx: $g#67
+[2.309] write():  <524> Tx: $e8030000c0030000e0030000ff02000084000020ffffffffffffffff981f0020ffffffffffffffffffffffffffffffff00000000981f0020d11c0008081d00080000002100000000000000000000000000000000981f0020fcffffff#0e
+[2.310] read():  <524> Rx: $qXfer:memory-map:read::0,bfb#14
+[2.312] write():  <524> Tx: $l<?xml version="1.0"?>\x0a<!DOCTYPE memory-map\x0a          PUBLIC "+//IDN gnu.org//DTD GDB Memory Map V1.0//EN"\x0a                 "http://sourceware.org/gdb/gdb-memory-map.dtd">\x0a<memory-map>\x0a<memory type="ram" start="0x0" length="0x8000000"/>\x0a<memory type="flash" start="0x8000000" length="0x10000">\x0a<property name="blocksize">0x800</property>\x0a</memory>\x0a<memory type="ram" start="0x8010000" length="0x67ff0000"/>\x0a<memory type="flash" start="0x70000000" length="0x4000000">\x0a<property name="blocksize">0x200</property>\x0a</memory>\x0a<memory type="ram" start="0x74000000" length="0x8bffffff"/>\x0a</memory-map>#c9
+[2.312] read():  <524> Rx: $m8001d08,4#62
+[2.312] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001d08 
+[2.315] write():  <524> Tx: $7b68002b#fb
+[2.316] read():  <524> Rx: $m20001f80,40#be
+[2.316] handlePacket():  Reading 0x40 bytes of memory from addr 0x20001f80 
+[2.324] write():  <524> Tx: $c10300004d0300000000480004000000ffffffffffffffffffffffffff020000a81f0020d11c00080000000000000000b81f0020bb190008c203000000000000#04
+[2.325] read():  <524> Rx: $m8001cd0,4#8d
+[2.325] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001cd0 
+[2.327] write():  <524> Tx: $044b1b68#fb
+[2.331] read():  <524> Rx: $qSymbol::#5b
+[2.331] write():  <524> Tx: $#00
+[2.332] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[2.332] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[2.333] read():  <524> Rx: $qRcmd,57726974654450203078322030784630#a4
+[2.333] write():  <524> Tx: $4f2e4b2e0a#ef
+[2.358] read():  <524> Rx: $qRcmd,52656164415020307832#29
+[2.366] write():  <524> Tx: $4f2e4b2e3a307866303030306664300a#86
+[2.389] read():  <524> Rx: $mf0000fd0,20#1b
+[2.389] handlePacket():  Reading 0x20 bytes of memory from addr 0xf0000fd0 
+[2.394] write():  <524> Tx: $0000000000000000000000000000000066000000040000000a00000000000000#41
+[2.420] read():  <524> Rx: $qRcmd,7265736574#37
+[2.420] STM32_AppReset():  Enter STM32_AppReset() function 
+[2.438] STM32_AppReset():  NVIC_DFSR_REG = 0x00000009
+[2.442] STM32_AppReset():  NVIC_CFGFSR_REG = 0x00000000
+[2.445] write():  <524> Tx: $53544d3332205375636365737366756c6c7920636f6d706c65746564207265736574206f7065726174696f6e0a#59
+[2.469] read():  <524> Rx: $vFlashErase:08000000,00002000#c4
+[2.469] handleFlashPacket():  FlashErase skipped (Will be performed at flash done)
+[2.469] write():  <524> Tx: $OK#9a
+[2.470] read():  <524> Rx: $vFlashWrite:8000000:\x00 \x00 %\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00u\x1d\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08\xff\x12\x00\x08\x00\x00\x00\x00u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00u\x1d\x00\x08\x00\x00\x00\x00u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08u\x1d\x00\x08#42
+[2.470] handleFlashPacket():  Flash write: Address= 0x8000000, Length=188
+[2.470] write():  <524> Tx: $OK#9a
+[2.478] read():  <524> Rx: $vFlashWrite:80000bc:\x10\xff\x06L}\x03x\x00+\x07\xff\x05K\x00+\x02\xff\x04H\x00\xff\x00\xff\x01}\x03}\x03p\x10\xffL\x00\x00 \x00\x00\x00\x00\xff\x1d\x00\x08\x04K\x10\xff\x00+\x03\xff\x03I\x04H\x00\xff\x00\xff\x10\xff\xffF\x00\x00\x00\x00P\x00\x00 \xff\x1d\x00\x08\xffF\x08\x1caF\xff\xff\x1f\xff\x00\xffU\xff\x00(\x01\xff\x00!\xffB\x1f\xff\x10\xff\x00\xff\xff\xff@B\x010\x10\xff\x10\xff\x00\xffG\xff\x00(\x01\xff\x00 \x10\xff\x01 \x10\xff\xffF\x10\xff\x00\xff=\xff\x00(\x01\xff\x00 \x10\xff\x01 \x10\xff\xffF\x10\xff\x00\xff\xff\xff\x00(\x01\xff\x00 \x10\xff\x01 \x10\xff\xffF\x10\xff\x00\xff\xff\xff\x00(\x01\xff\x00 \x10\xff\x01 \x10\xff\xffF\xff\xffGF\xffFC\x02[\x0aD\x00\xff\x0f\xffFH\x00\xff\x00K\x02}\x04\x0e[\x0a\x00\x0e\xff\xff\xffF&\x00\xffF\xff\x0f\xff\x00'\x1a\xffB)\xff\x00/\x15\xff\x00(J\xff\x00+\x00\xff\xff\xff\xff\x08\xff,\x00\xff\xff\xffk\x02[\x0a\xff\xff[\x02\xff\x05X\x0a0C\xff\x07\x10C\x0c\xff\xffF\xffF\xff\xff\x00/\x00\xff\xff\xff`\x1c\xff\xff\x01(\x00\xff\xff\xff\xff\x1ar\x01\x00\xff\xff\xff\x00.=\xff\x00"\x00&\x00}\x03\xff\xff\x00/\x00\xff\xff\xff\x00(]\xff\xff,`\xff\xff"\xff\x04\x13C\x1b/\x00\xff\xff\xff "\xff\x1b\x18\x00\xff@\xff@Z\x1e\xffA\x03C\xff\x18k\x01{\xff\x014\xff,\x00\xff\xff\xff\x01"\x07&}\x0a@k\x08\xffM\x1d@\x15C.@)\xff\xff,\xff\xff\xff"\xff\x04\x13C\x1b/\x00\xff\xff\xff "\xff\x1b\x19\x00\xff@\xff@Z\x1e\xffA\x0bC\xff\x1ak\x01[\xff\xff\x01\xff\x090\x00\x00\xffT\xff\x058\xff@\xffBe\xff\x04\x1b3\x00  \x014\xff@\x04\x1b\xff@u\x1e\xffA3C\x07&\x1d\x00\x00}\x04\x1e@\x01"KF\x1a@\x00.\x04\xff\x0f}\x03+@\x04+\x00\xff\x045k\x01\x00\xff\xff\xff\x014\xff\xff\xff,/\xff\xff&\x00}\x03\xff\xff\x00+R\xff\xff,\x00\xfft\xff\x0a\x00\xff\x08\x00-\xff\xff\xff}\x03\xff\x03+C[\x02[\x0a\xff&p\xff\x01?\x00/\xff\xff\xff,\xff\xffc\xff\x00,G\xff\xff(i\xff\xff}\x04\xff\x04zB%C\x1b}\x0a\x00\xff\xff\xff,\x00 &\xff@\xff\x1a\xff@j\x1e\xffA%C]\x1b\x04\x00\xffF\xff\xff\xff\x01[\x0aP\xff\x00}\x04\x01"KF\x1a@k\x07\xff\xffB\xff\x00/;\xff\x014\xff\xff\x01(J\xff\xff,\xff\xff\x07&\xff\x18m\x08.@\xff\xff\x07}\x03WM}\x04\x1a5@\x1e@\xff\xff\x00,\x1b\xff\x00-n\xff\x00+\x00\xff\xff\xff\x0a\x00\x1d\x00<\x00}\x04\xff\x01?\x00/\x00\xffX\xff\xff,\x00\xffJ\xff\xff\xff^\x1b\xffFv\xff\x00-\x1c\xff\x0a\x00\xff(\x1f\xff\x04\x00\x1d\x00\x11\xff\x00-]\xff\x00+\x17\xff\xff}\x03\x00"\xff\x03\xff&\x0f\xff\x0a\x00\xff&\x00}\x03\x0b\xff\x00,!\xff\x00-f\xff\xff(\xff\xff\x1d\x00\xff\xff\x01}\x03R\xffz\x1c\xff\xff\xffC\xff(\xff\xff\x0a\x00\x1d\x00\xff}\x04\xff\xff\x00.!\xff\x00-O\xff\x00+L\xff\xff\x18k\x01\xff\xff1K\x076.@\x01}\x04\x1d@T\xff\x01}\x03\x18\xff\xff(\xff\xff\xff}\x04\xff\x04\x7fB%C\x1b/M\xff &\xff\x1b,\x00\xff@\xff@j\x1e\xffA%C\xff\x18\x04\x00\x06\xff\x00-\xff\xff\x00+\x00\xffS\xff\xff!`F\xff\x03\x08B\x03\xff@F\x08B\x00\xff\x1d\x00\x01!\x11@G\xff\x00+\x00\xff\xff\xff\xff\x1aP\x01%\xff\x07&]\x1b.@\xffF}\x03\xff\xff}\x04\x00+\x00\xff\xff\xff\xff"`F\xff\x03\x10B\x04\xff@F\x10B\x01\xff\x1d\x00\xffF\x01"KF\xff}\x04\x1a@\xff\xff+\x00\xff\x08\x0a\x00\x00}\x04\xff\xffz\x1c\xff\xff\xffC\xff(\xff\xff\x1d\x00\x1d\xff\x01%?\xff\x15\x1e\x00\xffD\xff\x00"\x00}\x03\xff\xff\x01%\xff\xff\xffF\xff\xff\xff}]\xff\xff\xff\xff\xff\xffWFNFEF\xffFD\x02\xff\xffF\x00\xffFd\x0a6\x0e\xff\x0f\x00.c\xff\xff.}\x04\xff\xff}\x03\xff\x00\xff\x04\x1cC\x00}\x03\xffF\xffF\x7f>CFBF]\x02\xff\x0f[\x00m\x0a\x1b\x0e\xffF\xffFe\xff\xff+U\xff\xff"\x00!\xff\x00\xff\x04\x7f;\x15C\xff\x1aCFJF{@\x0f}\x0a\x00\xff\xff\xffmH\xff\x00\xffX\xffF\x00,T\xff\x08}\x03\xffF\x06;\xff&\xffF\xff\xff\x00%SF\x02)\x1b\xff\x03)\x00\xff\xff\xff\x01)(\xff0\x00\x7f0\x00( \xffj\x07\x04\xff\x0f"}\x0a@\x04}\x0a\x00\xff\x045}\x0a\x01\x03\xff0\x00\\J\xff0\x15@\xff(\x03\xff\xff\x01d\x0a\xff\xff\x01\xff\xff"\x00}\x04d\x02\xff\x05`\x0a\xff\x07\x10C\x18C<\xff\xffF\xffF\xffF\xffF\xff\xff\x01"\x10\x1a\x1b(|\xff\x00"\x00}\x04\xff\xff\x00,\x1d\xff\x04}\x03\xffF\x03;\x00&\xffF\xff\xff\xff>\x00- \xff\x02!CFJF{@\x0aC\x0f}\x0a\xff\xffEH\xff\x00\xffX\xffF\x00-\x19\xff\x01!\xff\xff\x0c}\x03\xffF\x09;\xff&\xffF\xff\xff \x00\x00\xff\xff\xffv&C\x1f\xff@\x00}\x03vB6\x1a\xffF\xffFy\xffJF\x03}\x03\x1aC\xffF\x03!\xff\xff(\x00\x00\xff\xff\xffC\x1f6\x18\xff@v6\x00!}]\xff\xff}\x04\x00}\x03\xff\x03\xff"\xff\xff\x00%\xff}\x03\xff\x03\x1cB(\xff\x1dB&\xff+C\\\x02d\x0aCF\xff"\xff\xffb\x01l\x01\xffB}\x04\xff\x1b!\x00%\x01>\x01'\x10\x00m\x00R\x00\x00(\x01\xff\xffB\x01\xff\x12\x1b=C\x019\x00)\xff\xff\x14\x00b\x1e\xffA%Cm\xff\xffFYF%\x00SF\x02)\x00\xffa\xff|\xff\xff}\x03\xff\x03\x1cCd\x02d\x0a;\x00\xff"v\xff\x12\x1b\x1a!\x01%\xff\xff\xff6}\x0a\x00\xff@,\x00\xff@e\x1e\xffA\x14Cb\x07\x04\xff\x0f""@\x04}\x0a\x00\xff\x044b\x01\x03\xff\xff\x01d\x0a\x00"]\xff\x01"\x00}\x04Z\xff\xff}\x04\xff\x03,Cd\x02d\x0a\xff"S\xff\xffF\xff\x1d\x00\x08\xff\xff\xff\xff0\x1e\x00\x08p\xffB\x00N\x02L\x00E\x02m\x0a\x12\x0e\xff\x0fv\x0a}\x04\x0e\xff\x0f\xff}\x0a\x0f\xff\xff,\x11\xff\x01 \xffB\x00\xffp\xff\xffB\xff\xff\xffB\x0d\xff\x00}\x0a\xff\xff(\x00E\x1e\xffA\xff\xff\x01 \x00-\xff\xff\xff\xff\x01 \x00.\xff\xff\xff\xff\x00 \xff\xff\xffFp\xffJ\x00N\x02E\x02D\x00m\x0a}\x04\x0e\xff\x0fv\x0a\x12\x0e\xff\x0f\xff,\x15\xff\xff}\x0a\x0e\xff\x00,\x15\xff\x00}\x0a\x01\xff\x00.\x1c\xff\x00-\x14\xff\xffB'\xff\x02 \x01;\x18@\x018p\xff\x00.\xff\xff\x02 @B\xff\xff\x00-\xff\xff\xff}\x0a\x0e\xff\x00}\x0a\x0e\xff\x00.\xff\xff\x0b\xff\x01}\x03\x019\xffC\x08\x00\x010\xff\xff\x00 \x00-\xff\xff\xff\xff\x00.\xff\xff\xffB\xff\xff\xffB\x05\xff\x02!X\x1e\x08@\x018\xff\xff\x00}\x04\xffB\x04\xff\xffB\xff\xff\x00 \xffB\xff\xffX\x1e\x01}\x03\xffC\x010\xff\xff0\xffB\x00D\x02M\x02\xff\x0fH\x00d\x0a\x12\x0em\x0a\x00\x0e\xff\x0f\xff}\x0a\x12\xff\xff(\x0c\xff\x00}\x0a\x12\xff\x00(\x19\xff\x00-\x17\xff\x00,+\xff\x02 \x01;\x18@\x018&\xff\x00-\xff\xff\x02 "\xff\x00,\xff\xff\xff(\x1f\xff\x00(\x1f\xff\x00-\x1d\xff\x02 \x01;\x18@\x018\x15\xff\x00,\x0e\xff\xffB\xff\xff\x00"\xffB\x04\xff\xffB\xff\xff\x00 \xffB\x09\xffX\x1e\x01}\x03\xffC\x010\x04\xff\x01}\x03\x019\xffC\x08\x00\x0100\xff\x00-\xff\xff\xffB\xff\xff\xffB\xff\xff\x02!X\x1e\x08@\x018\xff\xff\xffF\xff\xffNFWFEF\xffF\xff\xffC\x02[\x0aE\x00\xff\xff\x0f\x1c\xffF-\x0e\xff\x0f\x00-W\xff\xff-}\x04\xff\xff \xff\x00\xff\x04\x18C\x00}\x03\xffF\xffF\xffF\x7f=|\x02z\x00\xff\x0fd\x0a\x12\x0e\xffF}\x03\xff\xff}\x0aK\xff\xff\x00\xff}\x04\x00 \xff\x04\x7f:\x1cC\xff\x18k\x1cGF\x01\xffSFw@:\x00\x0f+H\xff}]I\xff\x00\xffX\xffF\x00+\x00\xff\xff\xff\x083\xffF\x06;\xffF|\x02z\x00\xff\x0f\xff%d\x0a\x12\x0e\xffF\xff\xff\x00,\x00\xff\xff\xffRF\x01}\x03\x1aC\xffF\x01 \xff\xffLFXF\x17\x00\x02(}\x04\xff\x03(\x00\xff\xff\xff\x00"\x00}\x03\x01(M\xffX\x02\xff\x05@\x0a\xff\x07\x10C8C\x03\xff<\xff\xffF\xffF\xffF\xffF\xff\xff\x00+[\xff\x04}\x03\xffF\x03;\x00%\xffF\xff\xff\xff5\x00,`\xffRF\x02}\x03\x1aC\xffF\x02 \xff\xff\xff"\x00}\x03\xff\xffKF\x1b\x0c\xffFKF&\x046\x0c\x18\x04aF3\x00"\x0cdF\x00\x0cCCNCPCTC\xff\x19\x1a\x0c\x12\x18\xffB\x03\xff\xff!I\x02\xffFdD\x1b\x04\x1b\x0c\x10\x04\xff\x18\xff\x01^\x1e\xffA\xff\x0e\x18C\x13\x0c\x1b\x19\xff\x01\x03C\x1c\x00}\x03\x01y\xff\x01}\x03b\x08\x1c@\x14C\x01\xff\x7f2\x00}\x0aM\xffc\x07\x04\xff\x0f}\x03}\x03@\x04+\x00\xff\x044}\x03\x01\x03\xff<K\x01\xff\x1c@\xff2\xff}\x0a\xff\xff\xff\x01[\x0a\xff\xff\xff\xff\x0c}\x03\xffF\x09;\xff%\xffFT\xff\x18\x00\x00\xff\xff\xffJFC\x1fv%\xff@\x00}\x03mB\xffF-\x1a\xffF\xffFF\xffRF\x03}\x03\x1aC\xffF\x03 P\xff \x00\x00\xff\xff\xffC\x1f-\x1a\xff@v=\x00 G\xff\xff}\x03\x00'\xff\x03\xff"r\xffBFf\xffLF2\x00XFb\xff\xff}\x03JF\xff\x03\x1aB"\xff\x1cB \xff}\x03C[\x02[\x0aGF\xff"_\xff\x01}\x03\xff\x1a\x1b}\x0a!\xff}\x03\x00\x01\xff\xff@\xff1\xff@\x1a\x00}\x03\x00\\\x1e\xffA\x13CZ\x07\x04\xff\x0f"\x1a@\x04}\x0a\x00\xff\x043Z\x01\x11\xff\xff\x01[\x0a\x00"D\xff\xff}\x03JF\xff\x03\x13C[\x02[\x0a7\x00\xff";\xff\x01\xff\xff\xff\x00"\x00}\x036\xff\x01"\x00}\x033\xff\xff}\x03\xff\x03}\x03C[\x02[\x0a\xff",\xffp\x1e\x00\x08\xff\xff\xff\xff\xff\xffGF\xffFD\x00\xff\x0f\xff\xffG\x02H\x02@\x0a\xffFfFH\x00\x7f\x0a}\x04\x0e\xff\x00%\x00\xffF\xff\x00\x00\x0e\xff\x0f\xffF\xff(\x00\xff\xff\xff\x01&q@&\x1a\xffBW\xff\x00.C\xff\x00(\x00\xff\x7f\xffIF\x00)\x00\xff\xff\xff\x01>\x00.\x00\xff\xff\xff[\x1aZ\x01\x00\xff\xff\xff\xff\x01\xff\x09 \x00\x00\xff\xff\xff\x058\xff@\xffB\x00\xff\xff\xffE\x1b}\x03\x00  \x015\xff@E\x1b\xff@b\x1e\xffA}\x03C\x07}\x04\x00%\x1c@\x01"AF\x0a@\x00,\x04\xff\x0f!\x19@\x04)\x00\xff\x043Y\x01\x00\xff\xff\xff\x015\xff\xff\xff-\x00\xff\xff\xff\xff}\x04\x00}\x03[\x02\xff\x05X\x0a\xff\x07 C\x10C\x0c\xff\xffF\xffF\xff\xff\x00.t\xff`\x1c\xff\xff\x01(\x00\xff\xff\xffJF\xff\x1ab\x01\x00\xff\xff\xff\x00,\xff\xff\x00"\x00}\x04\x00}\x03\xff\xff\x00.\x00\xff\xff\xff\x00(F\xff\xff,I\xff\xff"HF\xff\x04\x10C\xffF\x01"\x1b.\x09\xff  LF\xff\x1b\xff@JF \x00\xff@D\x1e\xffA\x02C\xff\x18Z\x01(\xff\x015\xff-\x00\xff\xff\xff\x01"\x07}\x04\xffI\x1a@[\x08\x0b@\x13C\x1c@\xff\xff\x00.\x00\xffx\xffu\xff\xff,T\xff\xff"IF\xff\x04\x11C\xffF\x01"\x1b.\x09\xff !HF\xff\x1b\xff@JF\x01\x00\xff@H\x1e\xffA\x0aC\xff\x1aZ\x01#cf
+[2.479] handleFlashPacket():  Flash write: Address= 0x80000bc, Length=2932
+[2.480] write():  <524> Tx: $OK#9a
+[2.486] read():  <524> Rx: $vFlashWrite:8000c30:\x00\xffs\xff\x01"AF\x0a@Y\x07\x00\xff\xff\xff\x11\xffHF\x00(X\xff\xff,\x0c\xff\xff\x08\x00+\x00\xff\xff\xff\xff \xff\x03\x03C[\x02[\x0a\xff}\x04\xff\xff\xff,%\xff\xff\x08\xff-\xff\xff[\x02[\x0a\xff\xff~\xff\x00,M\xff\xff(\x18\xff\xff}\x04\xff\x04rB}\x03C\x1b}\x0a\x00\xff\xff\xff\x1c\x00 %\xff@\xff\x1a\xff@Z\x1e\xffA}\x03CJF\x05\x00\xff\x1a\xffF8\xffr\x1c\xff\xff\xffC\xff(\xff\xff\x0a\x00KF\xff%\xff\xff\xff\x01[\x0aZ\xff\x00.A\xffe\x1c\xff\xff\x01)E\xff\xff-\x00\xffO\xff\x07}\x04KD[\x08\x1c@8\xff\x07"ZK-\x1a}\x03@\x14@2\xff\x00,\x1d\xff\x00+z\xffKF\x00+\x00\xff\xff\xff\x0a\x00\x00%\xff\xff\x01>\x00.\x19\xffKDl\xff\xff,\xff\xff\xff%\xff\xffJF\xffF\xff\x1a\x05\xff\x00+\xff\xff\x0a\x00\xff(\xff\xff\x05\x00KF\xff\xff\x00+I\xffKF\x00+w\xff\x0a\x00\xff%\xff\xff\xff,\x00\xffC\xff\xff\xff\x0a\x00\xff}\x04\x00}\x03\x16\xff\x00,\x15\xff\x00+W\xff\xff(\xff\xffKF{\xff\x00, \xff\x00+W\xffIF\x00)S\xffKDZ\x01h\xff\x07}\x046J\x1c@\x01%\x13@\xff\xff\xff(\xff\xff\xff"\xff\x04vB\x13C\x1b.S\xff %\xff\x1b\x1a\x00\xff@\xff@\\\x1e\xffA\x13CKD\x05\x00!\xff\x00+\xff\xffIF\x00)\x00\xffR\xff\xff!\xff\x03\x0fB\x00\xffM\xff`F\x08B\x00\xffI\xffKFG\xffHF\xff%\x00(\x00\xffO\xff\xff"\xff\x03\x17B\x04\xff`F\x10B\x01\xffKF\xffF\x01"AF\xff%\x0a@A\xffHF\x00(\x1f\xff\x1a\x1aP\x01 \xffJF\x07}\x04\xff\x1a\x1c@\xffF\x00%\xff\xfft\x1c\xff\xff\xffC\xff(\xff\xffKF \xff\xffFKF\x00%\xff\x08+\xff\x01}\x03@\xff\x00"\x00}\x03\xff\xff\xff}\x03\x00"\xff\x03\xff}\x04\xff\xff\x00%\x1c\xff\x01}\x03\xff\xff\x00}\x0a\xff\xff\x13\x00\x00%\xff\xff\x00%\xff\xff\xffF\xff\xff\xff}]\xff\xff\xff\xffA\x02B\x00\xff\x0fI\x0a\x12\x0e\x00 ~}\x0a\x0d\xff\xff}\x0a\x0c\xff\xff \x00\x04\x01C\xff}\x0a\x0a\xff\xff \xff\x1a\xff@HB\x00+\x00\xff\x08\x00pG\x03J\xff\x18\xff\xff\xff:\xff@\xff\xff\xffF\xff\xff\xff\x7fp\xff\x00(=\xff\xff\x17\xff\x18]@\xff\x0f(\x00\x00\xff@\xff\xff"\x12\x1a\xff}\x0a\x07\xff\xff\xff\x08(3\xff\x088\xff@h\x02@\x0a}\x03\xff\xff}\x0a\x0b\xff\x05}\x03)\x00\x1b\x1a\xff@\x03\x00\x1b3\xff@+\x00]\x1e\xffA\x19C\x0d\x00\x05(\x01\xffC\x1f\xff@+\x00\x0fI\x0b@n\x07\x09\xff\x0f&5@\x04-\x05\xff\x043]\x01\x02\xff\xff"\x0b@\x12\x1a\xff\x01X\x0a\xff\xff@\x02\xff\x05@\x0a\xff\x07\x10C Cp\xff\x00}\x04\x00"\x00 \xff\xffh\x02@\x0a\xff\xff\xff\xff\xff\xff\x1c!\x01}\x03\x1b\x04\xffB\x01\xff\x00\x0c\x109\x1b\x0a\xffB\x01\xff\x00\x0a\x089\x1b\x09\xffB\x01\xff\x00\x09\x049\x02\xff\x10\\@\x18pG\xffF\x04\x03\x02\x02\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\xff\xff\xff\xff\x00\xff\x02\x00\xff\x1d\x1ap\xff\x1d\x1bx\x7f+\x09\xff\xff\x1d\x1bx\x1a\x00\x1f}\x03\x1a@\x04K\x01!\xff@\x0a\x00\x1a`\xffF\xffF\x02\xff\xff\xff\x00\xff\x00\xff\xff\xff\xff\xff\x00\xff\x02\x009`\xff\x1d\x1ap\xff\x1d\x1bx\x7f+(\xff/J\xff\x1d\x1bx[\xff\xff\x08\xff3\xff\x00\xffX\xff\x1d\x12x\x11\x00\x03"\x0a@\xff\x00\xff!\xff@\x0a\x00\xffC\x1a@\x11\x00;h\xff\x01\xff"\x1a@\xff\x1d\x1bx\x18\x00\x03}\x03\x03@\xff\x00\xff@\x1fH\xff\x1d\x1bx[\xff\xff\x08\x0aC\xff3\xff\x00\x1aP1\xff\x1bJ\xff\x1d\x1bx\x19\x00\x0f}\x03\x0b@\x08;\xff\x08\x063\xff\x00\xff\x18\x043\x1bh\xff\x1d\x12x\x11\x00\x03"\x0a@\xff\x00\xff!\xff@\x0a\x00\xffC\x1a@\x11\x00;h\xff\x01\xff"\x1a@\xff\x1d\x1bx\x18\x00\x03}\x03\x03@\xff\x00\xff@\x09H\xff\x1d\x1bx\x1c\x00\x0f}\x03}\x03@\x08;\xff\x08\x0aC\x063\xff\x00\xff\x18\x043\x1a`\xffF\xffF\x03\xff\xff\xff\x00\xff\x00\xff\x00\xff\x00\xff\xff\xff\x00\xff)K\x1bx\x02+\x18\xff\x02\xff\x01+\x05\xffD\xff\x03+"\xff\x04+0\xff?\xff}\x04K\x1ah}\x04K\x1bh\x19\x1c\x10\x1c\xff\xffq\xff\x03\x1c\x1a\x1c\x1fK\x1a`\x1dK\x00"\x1ap/\xff\x1cK\x1ah\x1cK\x1bh\x19\x1c\x10\x1c\xff\xff\x05\xff\x03\x1c\x1a\x1c\x17K\x1a`\x15K\x00"\x1ap\x1f\xff\x14K\x1ah\x14K\x1bh\x19\x1c\x10\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\x0fK\x1a`\x0dK\x00"\x1ap\x0f\xff\x0cK\x1ah\x0cK\x1bh\x19\x1c\x10\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\x07K\x1a`\x05K\x00"\x1ap\xffF\x04K\x00"\x1a`\xffF\xffF\xff\xff\xffFk\x00\x00 |\x00\x00 p\x00\x00 \xff\xff\x00\xffbK\x1bh\x01+\x07\xffaK\x1bh\x01+\x03\xff`K\x00"\x1ap\xff\xff\\K\x1bh\x01+\x07\xff[K\x1bh\x02+\x03\xffZK\x03"\x1ap\xff\xffVK\x1bh\x01+\x07\xffUK\x1bh\x03+\x03\xffTK\x06"\x1ap\xff\xffPK\x1bh\x01+\x07\xffOK\x1bh\x04+\x03\xffNK\x0f"\x1ap\xff\xffJK\x1bh\x02+\x07\xffIK\x1bh\x01+\x03\xffHK\x01"\x1ap\xff\xffDK\x1bh\x02+\x07\xffCK\x1bh\x02+\x03\xffBK\x04"\x1apz\xff>K\x1bh\x02+\x07\xff=K\x1bh\x03+\x03\xff<K\x07"\x1apn\xff8K\x1bh\x02+\x07\xff7K\x1bh\x04+\x03\xff6K\x09"\x1apb\xff2K\x1bh\x03+\x07\xff1K\x1bh\x01+\x03\xff0K\x02"\x1apV\xff,K\x1bh\x03+\x07\xff+K\x1bh\x02+\x03\xff}\x0aK\x05"\x1apJ\xff&K\x1bh\x03+\x07\xff%K\x1bh\x03+\x03\xff}\x04K\x08"\x1ap>\xff K\x1bh\x03+\x07\xff\x1fK\x1bh\x01+\x03\xff\x1eK\x0e"\x1ap2\xff\x1aK\x1bh\x04+\x07\xff\x19K\x1bh\x01+\x03\xff\x18K\x0a"\x1ap&\xff\x14K\x1bh\x04+\x07\xff\x13K\x1bh\x02+\x03\xff\x12K\x0b"\x1ap\x1a\xff\x0eK\x1bh\x04+\x07\xff\x0dK\x1bh\x03+\x03\xff\x0cK\x0c"\x1ap\x0e\xff\x08K\x1bh\x04+\x07\xff\x07K\x1bh\x04+\x03\xff\x06K\x0d"\x1ap\x02\xff\x04K\x10"\x1ap\xffF\xffF\xff\xfft\x00\x00 \xff\x00\x00 H\x00\x00 \xff\xff\xff\xff\x00\xff\xff}\x03\xff\x05[i\xff}\x03\xff\x05\x00"Za\xff}\x03\xff\x05Zi\xff}\x03\xff\x05@!J@Za\xff}\x03\xff\x05\x1bi\xff\x0a{`{h'"\x13@{`{h\x00+\x02\xffcK\x01"\x1a`\xff}\x03\xff\x05Zi\xff}\x03\xff\x05@!J@Za\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!J@Za\xff}\x03\xff\x05\x1bi\xff\x0a{`{h'"\x13@{`{h\x00+\x02\xffTK\x02"\x1a`\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!J@Za\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!I\x00J@Za\xff}\x03\xff\x05\x1bi\xff\x0a{`{h'"\x13@{`{h\x00+\x02\xffDK\x03"\x1a`\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!I\x00J@Za\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!\xff\x00J@Za\xff}\x03\xff\x05\x1bi\xff\x0a{`{h'"\x13@{`{h\x00+\x02\xff3K\x04"\x1a`\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!\xff\x00J@Za\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!\xff\x00\x0aCZa}\x0aK\xffh\xff\x0a;`;h\x01+\x03\xff'K\x01"\x1a`\x10\xff;h\x02+\x03\xff}\x04K\x02"\x1a`\x09\xff;h\x04+\x03\xff K\x03"\x1a`\x02\xff\x1eK\x04"\x1a`\xff\xff\xff\xff\x1dK\x1bx\x0b+\x0a\xff\x1cK\x1bx\x00+\x06\xff\x1bK\x01"\x1ap\x18K\x01"\x1ap\x06\xff\x15K\x1bx\x10+\x02\xff\x14K\x01"\x1ap\x12K\x1bx\x0f+\x07\xff\xff\xff\x09\xff\x10K\x03"\x1ap\x10K\x00"\x1a`\x0aK\xffh\x09K\xff!I\x01\x0aC\xff`\x06K\xffh\x05K\xff!\x09\x02\x0aC\xff`\xffF\xffF\x02\xff\xff\xff\xffF\xff\x00\x00 \x00\x18\x02@t\x00\x00 H\x00\x00 i\x00\x00 j\x00\x00 l\x00\x00 \xff\xff\x00\xff\xffK\x1bx\x00+\x04\xff\xffK\x18\x1c\x00\xffB\xffj\xff\xffK\x1bx\x01+\x00\xff\x19\xff\xffK\x1bhZ\x1c\xffK\x1a`\xffK\x1bh\xffJ\xffB\x02\xff\xffK\x00"\x1ap\xffK\x1bx\x0d+\x00\xff\xff\xff\xff\x00\xffK\xff\x18\x1bh\xffF\xffK\x1bh\xffI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\xffK\x1a`\xffK\x1bh\xff!\xff\x05\x18\x1c\xff\xff2\xff\x03\x1c\x1a\x1c\xffK\x1a`\xff\xff\xffK\x1bh\xffI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\xffK\x1a`\xffK\x1bh\xff!\xff\x05\x18\x1c\xff\xff\x1c\xff\x03\x1c\x1a\x1c\xffK\x1a`\xff\xff\xffK\x1bh\xffI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\xffK\x1a`\xffK\x1bh\xffI\x18\x1c\xff\xff\x07\xff\x03\x1c\x1a\x1c\xffK\x1a`\xff\xff\xffK\x1bh\xffI\x18\x1c\xff\xffn\xff\x03\x1c\x1a\x1c\xffK\x1a`\xffK\x1bh\xff!\xff\x05\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1c\xffK\x1a`\xff\xff\xffK\x1bh\xffI\x18\x1c\xff\xffX\xff\x03\x1c\x1a\x1c\x7fK\x1a`~K\x1bh\xffI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1czK\x1a`z\xffyK\x1bhyI\x18\x1c\xff\xffC\xff\x03\x1c\x1a\x1cuK\x1a`tK\x1bhwI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1cpK\x1a`e\xffnK\x1bhnI\x18\x1c\xff\xff.\xff\x03\x1c\x1a\x1cjK\x1a`iK\x1bhmI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1ceK\x1a`P\xffdK\x1bhdI\x18\x1c\xff\xff\x19\xff\x03\x1c\x1a\x1c`K\x1a`_K\x1bh\xff!\xff\x05\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1cZK\x1a`:\xffYK\x1bhYI\x18\x1c\xff\xff\x03\xff\x03\x1c\x1a\x1cUK\x1a`TK\x1bhYI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1cPK\x1a`%\xffNK\x1bhNI\x18\x1c\xff\xff\xff\xff\x03\x1c\x1a\x1cJK\x1a`IK\x1bh\x00!\x18\x1c\xff\xffr\xff\x03\x1c\x1a\x1cEK\x1a`\x10\xffKK\x01"\x1ap\x0c\xffIK\x02"\x1ap\x08\xffGK\x03"\x1ap\x04\xffEK\x03"\x1ap\x00\xff\xffF;K\x1bh\x00!\x18\x1c\xff\xffL\xff\x03\x1e\x0a\xff?K\x1bx\x01+\x06\xff5K\x1bh\xff"\x12\x06Z@3K\x1a`,K\x02"\x1ap0K\x1bh\x18\x1c\x00\xff}\x03\xffK\xff'K\x1bx\x02+)\xff+K\x1bh3I\x18\x1c\xff\xff"\xff\x03\x1e\x07\xff'K\x1bh0I\x18\x1c\xff\xff\x06\xff\x03\x1e\x13\xff\x00\xffb\xff\x1eK\x1bhZ\x1c\x1dK\x1a`\x1cK\x1ah\xff}\x03\xff\x00\xffB}\x0a\xff\x19K\x00"\x1a`\x1bK\x00"\x1a`}\x03\xff\x19K\x1bh\x18\x1c\x00\xff\xff\xff\x1d\xff\x10K\x1bx\x03+\x19\xff\x1fK\x1bh\x18\x1c\x00\xff\xff\xff\x0eK\x1bhZ\x1c\x0cK\x1a`\x0bK\x1ah\xff}\x03\xff\x00\xffB\x09\xff\x0cK\x00"\x1a`\x05K\x02"\x1ap\x05K\x00"\x1a`\xff\xff\xffF\xffF\xff\xff\xffFi\x00\x00 \x00 \xffDl\x00\x00  N\x00\x00H\x00\x00 \xff\x1e\x00\x08p\x00\x00 \x00\x00 A\x00\x00@@\x00\x00\xff@\x00\x00\xff@\x00\x00\xff@\x00\x00\x10Ak\x00\x00 #10
+[2.486] handleFlashPacket():  Flash write: Address= 0x8000c30, Length=2976
+[2.487] write():  <524> Tx: $OK#9a
+[2.489] read():  <524> Rx: $vFlashWrite:80017d0:j\x00\x00 \x00<\x1cF\x00\xffy\xff|\x00\x00 \xff\xff\x00\xffDKZkCK\x03!\x0aCZcBK\x1ahAK\x12\x0d\x12\x05\x1a`?K\x1ah>K?I\x0aC\x1a`\xff}\x03\xff\x05\x1ah\xff}\x03\xff\x05<I\x0a@\x1a`\xff}\x03\xff\x05\xffh\xff}\x03\xff\x05\xff!\xff\x03\x0aC\xff`\xff}\x03\xff\x05\xffh\xff}\x03\xff\x05\xff!\x09\x04\x0aC\xff`\xff}\x03\xff\x05\xffh\xff}\x03\xff\x05\xff!\xff\x04\x0aC\xff`\xff}\x03\xff\x05\xffh\xff}\x03\xff\x05\xff!\x09\x06\x0aC\xff`)J)KRnZf'J'KRnZf%K\x1ah}\x04K\xff!I\x01\x0aC\x1a`"K\x1ah!K\xff!\x09\x02\x0aC\x1a`\x1eJ\xff}\x03\xffX\x1dI\xff"R\x01\x13C\xff"\xffP\x1aJ\xff}\x03\xffX\x18I\xff"\xff\x02\x13C\xff"\xffP\x00!\x07 \xff\xffj\xff\x07 \xff\xffM\xff\xff}\x03\xff\x05\x1ah\xff}\x03\xff\x05\x10I\x0aC\x1a`\xff}\x03\xff\x05Zi\xff}\x03\xff\x05?!\xffCZa\xff}\x03\xff\x05Zi\xff}\x03\xff\x05\xff!\xff\x00\x0aCZa\xffF\xffF\xff\xff\xffF\x00\x10\x02@\x00\x04\x00PUU\x00\x00\xff\x00\x00<\x00\x18\x02@\x05U\x05\x00\xff\xff\x00\xff\xff}\x03\xff\x05Yi\xff}\x03\xff\x05\xff"\xff\x00\x0a@Za\x04K[i\x03K\x00"Za\xffF\xffF\xff\xff\xffF\x00\x04\x00P\xff\xff\xff\xff\x00\xffx`\xffIxh\xff\xff\x02\xff\x03\x1e\x05\xff\xffIxh\xff\xff\xff\xff\x03\x1e\x02\xff\x00\xffD\xff0\xff\x00!xh\xff\xff\xff\xff\x03\x1e\x11\xff\xffK\x01"\x1ap\x01}\x03[B\x00!\x18\x00\x00\xffh\xff{h\xff"\x12\x06S@{`\xffK\x00"\x1ap\x19\xff\x00!xh\xff\xff\xff\xff\x03\x1e\x13\xff\xffK\x01"\x1ap\xffK\x03"\x1a`xh\xff\xffL\xff\x03\x00\x00!\x18\x00\x00\xffK\xff\xffK\x00"\x1a`\xffK\x00"\x1ap\xffIxh\xff\xffo\xff\x03\x1c\x18\x1c\xff\xff9\xff\x03\x00{b{j\x00+\x13\xffzj\x13\x00[\x01\xff\x1a\xff\x00\xff\x18\xff\x00\x18\x00\xff\xffJ\xff\x03\x1c\x19\x1cxh\xff\xffa\xff\x03\x1c{`tK\x01"\x1ap{j\x00!\x18\x00\x00\xff\x1f\xffsIxh\xff\xffI\xff\x03\x1c\x18\x1c\xff\xff\x13\xff\x03\x00;b;j\x00+\x0f\xff;jd"SC\x18\x00\xff\xff(\xff\x03\x1c\x19\x1cxh\xff\xff?\xff\x03\x1c{`cK\x01"\x1ap;j\x00!\x18\x00\x00\xff\xff\xffcIxh\xff\xff'\xff\x03\x1c\x18\x1c\xff\xff\xff\xff\x03\x00\xffa\xffi\x00+\x11\xff\xffi\x13\x00\xff\x00\xff\x18[\x00\x18\x00\xff\xff\x04\xff\x03\x1c\x19\x1cxh\xff\xff\x1b\xff\x03\x1c{`QK\x01"\x1ap\xffi\x00!\x18\x00\x00\xff\xff\xffxh\xff\xff\xff\xff\x03\x00\xffa\xffi\x00+\x0d\xff\xffi\x18\x00\xff\xff\xff\xff\x03\x1c\x19\x1cxh\xff\xff\x00\xff\x03\x1c{`CK\x01"\x1apFIxh\xff\xff\xff\xff\x03\x1c\x18\x1c\xff\xff\xff\xff\x03\x00{aAIxh\xff\xff\xff\xff\x03\x1c\x1c\x1c{i\x18\x00\xff\xff\xff\xff\x03\x1c\x19\x1c \x1c\xff\xff\xff\xff\x03\x1c{`8Ixh\xff\xff\xff\xff\x03\x1c\x18\x1c\xff\xff\xff\xff\x03\x00;a3Ixh\xff\xff\xff\xff\x03\x1c\x1c\x1c;i\x18\x00\xff\xff\xff\xff\x03\x1c\x19\x1c \x1c\xff\xff\xff\xff\x03\x1c{`+Ixh\xff\xff\xff\xff\x03\x1c\x18\x1c\xff\xff\xff\xff\x03\x00\xff`&Ixh\xff\xff\xff\xff\x03\x1c\x1c\x1c\xffh\x18\x00\xff\xff\xff\xff\x03\x1c\x19\x1c \x1c\xff\xff\xff\xff\x03\x1c{`{i\x00+\x05\xff;i\x00+\x02\xff\xffh\x00+\x17\xff\x15K\x01"\x1ap\xffi\x01!\x18\x00\x00\xffa\xff{i\x00!\x18\x00\x00\xff\\\xff;i\x00!\x18\x00\x00\xffW\xff\xffh\x00!\x18\x00\x00\xffR\xff\x04\xff\xffi\x00!\x18\x00\x00\xffL\xff\x07K\x00"\x1a`\x05K\x00"\x1ap\xffF\x0b\xff\xff\xff\xffF\x00<\x1cF\x00\xffy\xffh\x00\x00 x\x00\x00 \x00\x00zD\x00\x00\xffB\x00\x00 A\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\x00}\x03{`\x1d\xff\x12KYi\x12Kzh\xff\x00\xffX\x0fK\x0aCZa\xff}\x03\xff\x05Yi\x0eKzh\xff\x00\xffX\xff}\x03\xff\x05\x0aCZa\xff}\x03\xff\x00\x18\x00\x00\xffg\xff\xff\xffq\xff{h\x013{`{h\x03+\xff\xff\xffF\xffF\x02\xff\xff\xff\xffF\x00\x04\x00P\x00\x00\x00 \x10\x00\x00 \xff\xff\xff\xff\x00\xffx`9`"K\x1bh\x03+;\xff K\x1bh\x00+7\xff\x1fK\x1bx\x01+3\xff\xff\xffM\xff{h\x00+\x06\xff\x1bKZi\x1aK\xff!\x0aCZa\x08\xff\x18KYi\x18Kzh\xff\x00\xffX\x15K\x0aCZa;h\x00+\x05\xff\x12KZi\x11K\xff!\x0aCZa\xff}\x03\xff\x05Yi\x0bK\x1ah\x0eK\xff\x00\xffX\xff}\x03\xff\x05\x0aCZa\xff}\x03\xff\x00\x18\x00\x00\xff\x14\xff\x04K\x1bhZ\x1c\x03K\x1a`\xffF\xffF\x02\xff\xff\xff\xffFx\x00\x00 h\x00\x00 \x00\x04\x00P \x00\x00 \x10\x00\x00 \xff\xff\xff\xff\x00\xffx`\x02\xff{h\x01;{`{h\x00+\xff\xff\xffF\xffF\x02\xff\xff\xff\xff\xff\x00\xff\xff\xffa\xff\xff\xff\xff\xff\xff\xff\x0dH\xffF\x00\xff&\xff\x0cH\x0dI\x0dJ\x00}\x03\x02\xff\xffX\xffP\x043\xff\x18\xffB\xff\xff\x0aJ\x0aL\x00}\x03\x01\xff\x13`\x042\xffB\xff\xff\x00\xff\x1d\xff\xff\xff\xff\xff\xff\xff\x00 \x00 \x00\x00\x00 L\x00\x00 \xff\x1e\x00\x08L\x00\x00 \xff\x00\x00 \xff\xff\x00\x00\xff\xff\x00\xff\x03K\xff"\x12\x05\xff`\xffF\xffF\xff\xff\xffF\x00\xff\x00\xffp\xff\x00&\x0cM\x0dLd\x1b\xff\x10\xffB\x09\xff\x00&\x00\xff\x19\xff\x0aM\x0aLd\x1b\xff\x10\xffB\x05\xffp\xff\xff\x00\xffX\xffG\x016\xff\xff\xff\x00\xffX\xffG\x016\xff\xff\xff\x1e\x00\x08\xff\x1e\x00\x08\xff\x1e\x00\x08\xff\x1e\x00\x08\xff\xff\xffF\xff\xff\x08\xff\xffFpG\xff\xff\xffF\xff\xff\x08\xff\xffFpG#76
+[2.489] handleFlashPacket():  Flash write: Address= 0x80017d0, Length=1568
+[2.489] write():  <524> Tx: $OK#9a
+[2.491] read():  <524> Rx: $vFlashWrite:8001df0:}\x0a\x06\x00\x08f\x05\x00\x08\xff\x05\x00\x08(\x05\x00\x08\xff\x05\x00\x08\x06\x06\x00\x08\xff\x05\x00\x08(\x05\x00\x08f\x05\x00\x08f\x05\x00\x08\x06\x06\x00\x08(\x05\x00\x08\\\x06\x00\x08\\\x06\x00\x08\\\x06\x00\x08\x12\x06\x00\x08f\x05\x00\x08f\x05\x00\x08\xff\x05\x00\x08&\x05\x00\x08\xff\x05\x00\x08\x06\x06\x00\x08\xff\x05\x00\x08&\x05\x00\x08f\x05\x00\x08f\x05\x00\x08\x06\x06\x00\x08&\x05\x00\x08\\\x06\x00\x08\\\x06\x00\x08\\\x06\x00\x08\x10\x06\x00\x08T\x09\x00\x08\xff\x08\x00\x08\xff\x08\x00\x08,\x0a\x00\x08\xff\x08\x00\x08\xff\x08\x00\x08"\x0a\x00\x08,\x0a\x00\x08\xff\x08\x00\x08"\x0a\x00\x08\xff\x08\x00\x08,\x0a\x00\x080\x0a\x00\x080\x0a\x00\x080\x0a\x00\x088\x0a\x00\x08\xff\x14\x00\x08\x1e\x15\x00\x08J\x15\x00\x08t\x15\x00\x08\xff\x15\x00\x08\xff\x15\x00\x08\xff\x15\x00\x08\x1e\x16\x00\x08J\x16\x00\x08t\x16\x00\x08\xff\x16\x00\x08\xff\x16\x00\x08\xff\x16\x00\x08\xff\x16\x00\x08#53
+[2.491] handleFlashPacket():  Flash write: Address= 0x8001df0, Length=248
+[2.491] write():  <524> Tx: $OK#9a
+[2.493] read():  <524> Rx: $vFlashWrite:8001ee8:\xff\x00\x00\x08#9b
+[2.493] handleFlashPacket():  Flash write: Address= 0x8001ee8, Length=4
+[2.493] write():  <524> Tx: $OK#9a
+[2.494] read():  <524> Rx: $vFlashWrite:8001eec:\xff\x00\x00\x08#9e
+[2.494] handleFlashPacket():  Flash write: Address= 0x8001eec, Length=4
+[2.494] write():  <524> Tx: $OK#9a
+[2.495] read():  <524> Rx: $vFlashWrite:8001ef0:\xff\x00\x00\x00\xff\x00\x00\x00\xff\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x10\x00\x00\x00 \x00\x00\x00@\x00\x00\x00y\x00\x00\x00}\x04\x00\x00\x000\x00\x00\x00\x19\x00\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00x\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x00\x10\x00\x00\x00#01
+[2.495] handleFlashPacket():  Flash write: Address= 0x8001ef0, Length=76
+[2.495] write():  <524> Tx: $OK#9a
+[2.496] read():  <524> Rx: $vFlashDone#ea
+[2.496] handleFlashPacket():  Writing to C:\Users\akkay\AppData\Local\Temp\ST-LINK_GDB_server_a05648.srec
+[2.528] spawnCubeProgrammer():   ------ Switching to STM32CubeProgrammer ----- 
+[2.528] file_utils_spawn():  Spawning "C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\STM32_Programmer_CLI.exe --connect port=SWD freq=140 mode=UR reset=hwRst --extload C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\ExternalLoader\512W3A_STM3210E-EVAL.stldr --download C:\Users\akkay\AppData\Local\Temp\ST-LINK_GDB_server_a05648.srec --verify --log C:\Users\akkay\AppData\Local\Temp\STM32CubeProgrammer_a05648.log"
+[4.569] file_utils_spawn():  Return code 0
+[4.569] spawnCubeProgrammer():  03:18:37:049       -------------------------------------------------------------------
+[4.569] spawnCubeProgrammer():  03:18:37:050                        STM32CubeProgrammer v2.5.0-RC1                  
+[4.569] spawnCubeProgrammer():  03:18:37:050       -------------------------------------------------------------------
+[4.569] spawnCubeProgrammer():  
+[4.569] spawnCubeProgrammer():  03:18:37:050 
+[4.569] spawnCubeProgrammer():  
+[4.569] spawnCubeProgrammer():  03:18:37:050 Log output file:   C:\Users\akkay\AppData\Local\Temp\STM32CubeProgrammer_a05648.log
+[4.569] spawnCubeProgrammer():  03:18:37:060 STLinkUSBDriver.dll loaded
+[4.569] spawnCubeProgrammer():  03:18:37:076 STLinkUSBDriver.dll loaded
+[4.569] spawnCubeProgrammer():  03:18:37:077 STLinkUSBDriver.dll loaded
+[4.569] spawnCubeProgrammer():  03:18:37:077 ST-LINK SN  : 066EFF3536324D5043021346
+[4.569] spawnCubeProgrammer():  03:18:37:077 ST-LINK FW  : V2J37M26
+[4.569] spawnCubeProgrammer():  03:18:37:078 Board       : NUCLEO-G031K8
+[4.569] spawnCubeProgrammer():  03:18:37:078 Voltage     : 3.24V
+[4.569] spawnCubeProgrammer():  03:18:37:098 SWD freq    : 240 KHz
+[4.569] spawnCubeProgrammer():  03:18:37:098 Connect mode: Under Reset
+[4.569] spawnCubeProgrammer():  03:18:37:098 Reset mode  : Hardware reset
+[4.569] spawnCubeProgrammer():  03:18:37:102 Device ID   : 0x466
+[4.569] spawnCubeProgrammer():  03:18:37:105 Revision ID : Rev Z
+[4.569] spawnCubeProgrammer():  03:18:37:118 flash loader C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208/tools/bin/FlashLoader/0x466.stldr is loaded
+[4.569] spawnCubeProgrammer():  03:18:37:122 Device name : STM32G03x/STM32G04x
+[4.569] spawnCubeProgrammer():  03:18:37:122 Reading data...
+[4.569] spawnCubeProgrammer():  03:18:37:123 r ap 0 @0x1FFF75E0 0x00000004 bytes Data 0x00000040
+[4.569] spawnCubeProgrammer():  03:18:37:123 Flash size  : 64 KBytes
+[4.569] spawnCubeProgrammer():  03:18:37:124 Device type : MCU
+[4.569] spawnCubeProgrammer():  03:18:37:124 Device CPU  : Cortex-M0+
+[4.569] spawnCubeProgrammer():  03:18:37:124 
+[4.569] spawnCubeProgrammer():  03:18:37:124 
+[4.570] spawnCubeProgrammer():  
+[4.570] spawnCubeProgrammer():  03:18:37:124 Memory Programming ...
+[4.570] spawnCubeProgrammer():  03:18:37:124 Opening and parsing file: ST-LINK_GDB_server_a05648.srec
+[4.570] spawnCubeProgrammer():  03:18:37:125   File          : ST-LINK_GDB_server_a05648.srec
+[4.570] spawnCubeProgrammer():  03:18:37:125   Size          : 7996 Bytes
+[4.570] spawnCubeProgrammer():  03:18:37:125   Address       : 0x08000000 
+[4.570] spawnCubeProgrammer():  03:18:37:125 
+[4.570] spawnCubeProgrammer():  
+[4.570] spawnCubeProgrammer():  03:18:37:125 Erasing Segment <0> Address <0x08000000> Size <7996>Bytes
+[4.570] spawnCubeProgrammer():  03:18:37:125 Erasing memory corresponding to segment 0:
+[4.570] spawnCubeProgrammer():  03:18:37:130 Memory erase...
+[4.570] spawnCubeProgrammer():  03:18:37:137 halt ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:137 w ap 0 reg 15 PC   (0x20000000)  
+[4.570] spawnCubeProgrammer():  03:18:37:141 w ap 0 reg 17 MSP  (0x20000500)  
+[4.570] spawnCubeProgrammer():  03:18:37:144 w ap 0 reg 16 xPSR (0x01000000)  
+[4.570] spawnCubeProgrammer():  03:18:37:179 w ap 0 @0x20000B20 0x00000200 bytes Data 0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:180 w ap 0 @0x20000000 0x00000004 bytes Data 0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:282 w ap 0 @0x20000004 0x000006F4 bytes Data 0xFFFFFF80
+[4.570] spawnCubeProgrammer():  03:18:37:282 Erasing internal memory sectors [0 3]
+[4.570] spawnCubeProgrammer():  03:18:37:282 Init flashloader...
+[4.570] spawnCubeProgrammer():  03:18:37:284 halt ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:289 w ap 0 reg 0 R0   0x00000001
+[4.570] spawnCubeProgrammer():  03:18:37:293 w ap 0 reg 1 R1   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:296 w ap 0 reg 2 R2   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:301 w ap 0 reg 3 R3   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:303 w ap 0 reg 4 R4   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:307 w ap 0 reg 5 R5   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:310 w ap 0 reg 6 R6   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:314 w ap 0 reg 7 R7   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:318 w ap 0 reg 8 R8   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:322 w ap 0 reg 9 R9   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:325 w ap 0 reg 10 R10  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:329 w ap 0 reg 11 R11  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:333 w ap 0 reg 12 R12  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:337 w ap 0 reg 13 SP   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:340 w ap 0 reg 14 LR   0x20000001
+[4.570] spawnCubeProgrammer():  03:18:37:343 w ap 0 reg 15 PC   0x20000005
+[4.570] spawnCubeProgrammer():  03:18:37:347 w ap 0 reg 16 xPSR 0x01000000
+[4.570] spawnCubeProgrammer():  03:18:37:351 w ap 0 reg 17 MSP  0x20000AF4
+[4.570] spawnCubeProgrammer():  03:18:37:355 w ap 0 reg 18 PSP  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:355 run ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:360 halt ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:363 r ap 0 reg 0 R0   0x00000001
+[4.570] spawnCubeProgrammer():  03:18:37:363 Loader sector erase...
+[4.570] spawnCubeProgrammer():  03:18:37:367 w ap 0 reg 0 R0   0x08000000
+[4.570] spawnCubeProgrammer():  03:18:37:371 w ap 0 reg 1 R1   0x08001800
+[4.570] spawnCubeProgrammer():  03:18:37:374 w ap 0 reg 2 R2   0x00000002
+[4.570] spawnCubeProgrammer():  03:18:37:379 w ap 0 reg 3 R3   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:382 w ap 0 reg 4 R4   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:387 w ap 0 reg 5 R5   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:390 w ap 0 reg 6 R6   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:394 w ap 0 reg 7 R7   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:398 w ap 0 reg 8 R8   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:401 w ap 0 reg 9 R9   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:405 w ap 0 reg 10 R10  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:408 w ap 0 reg 11 R11  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:413 w ap 0 reg 12 R12  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:416 w ap 0 reg 13 SP   0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:420 w ap 0 reg 14 LR   0x20000001
+[4.570] spawnCubeProgrammer():  03:18:37:424 w ap 0 reg 15 PC   0x200002D1
+[4.570] spawnCubeProgrammer():  03:18:37:427 w ap 0 reg 16 xPSR 0x01000000
+[4.570] spawnCubeProgrammer():  03:18:37:431 w ap 0 reg 17 MSP  0x20000AF4
+[4.570] spawnCubeProgrammer():  03:18:37:435 w ap 0 reg 18 PSP  0x00000000
+[4.570] spawnCubeProgrammer():  03:18:37:435 run ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:527 halt ap 0 
+[4.570] spawnCubeProgrammer():  03:18:37:530 r ap 0 reg 0 R0   0x00000001
+[4.570] spawnCubeProgrammer():  03:18:37:530 erase: 0405ms
+[4.570] spawnCubeProgrammer():  03:18:37:530 Download in Progress:
+[4.570] spawnCubeProgrammer():  03:18:37:530   Size          : 8000 Bytes
+[4.570] spawnCubeProgrammer():  03:18:37:530   Address       : 0x08000000 
+[4.570] spawnCubeProgrammer():  03:18:37:530 
+[4.571] spawnCubeProgrammer():  
+[4.571] spawnCubeProgrammer():  03:18:37:530 Buffer program...
+[4.571] spawnCubeProgrammer():  03:18:37:537 halt ap 0 
+[4.571] spawnCubeProgrammer():  03:18:37:537 w ap 0 reg 15 PC   (0x20000000)  
+[4.571] spawnCubeProgrammer():  03:18:37:541 w ap 0 reg 17 MSP  (0x20000500)  
+[4.571] spawnCubeProgrammer():  03:18:37:545 w ap 0 reg 16 xPSR (0x01000000)  
+[4.571] spawnCubeProgrammer():  03:18:37:581 w ap 0 @0x20000B20 0x00000200 bytes Data 0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:583 w ap 0 @0x20000000 0x00000004 bytes Data 0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:686 w ap 0 @0x20000004 0x000006F4 bytes Data 0xFFFFFF80
+[4.571] spawnCubeProgrammer():  03:18:37:686 Loader write range...
+[4.571] spawnCubeProgrammer():  03:18:37:822 w ap 0 @0x20000B20 0x00000900 bytes Data 0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:822 W B1 in RAM @0x20000B20 size 0x00000900 : 0136ms
+[4.571] spawnCubeProgrammer():  03:18:37:822 Init flashloader...
+[4.571] spawnCubeProgrammer():  03:18:37:825 halt ap 0 
+[4.571] spawnCubeProgrammer():  03:18:37:830 w ap 0 reg 0 R0   0x00000001
+[4.571] spawnCubeProgrammer():  03:18:37:834 w ap 0 reg 1 R1   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:838 w ap 0 reg 2 R2   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:841 w ap 0 reg 3 R3   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:844 w ap 0 reg 4 R4   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:848 w ap 0 reg 5 R5   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:851 w ap 0 reg 6 R6   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:855 w ap 0 reg 7 R7   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:858 w ap 0 reg 8 R8   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:863 w ap 0 reg 9 R9   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:866 w ap 0 reg 10 R10  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:870 w ap 0 reg 11 R11  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:874 w ap 0 reg 12 R12  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:877 w ap 0 reg 13 SP   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:881 w ap 0 reg 14 LR   0x20000001
+[4.571] spawnCubeProgrammer():  03:18:37:886 w ap 0 reg 15 PC   0x20000005
+[4.571] spawnCubeProgrammer():  03:18:37:889 w ap 0 reg 16 xPSR 0x01000000
+[4.571] spawnCubeProgrammer():  03:18:37:894 w ap 0 reg 17 MSP  0x20000AF4
+[4.571] spawnCubeProgrammer():  03:18:37:897 w ap 0 reg 18 PSP  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:897 run ap 0 
+[4.571] spawnCubeProgrammer():  03:18:37:903 halt ap 0 
+[4.571] spawnCubeProgrammer():  03:18:37:905 r ap 0 reg 0 R0   0x00000001
+[4.571] spawnCubeProgrammer():  03:18:37:910 w ap 0 reg 0 R0   0x08000000
+[4.571] spawnCubeProgrammer():  03:18:37:913 w ap 0 reg 1 R1   0x00000900
+[4.571] spawnCubeProgrammer():  03:18:37:917 w ap 0 reg 2 R2   0x20000B20
+[4.571] spawnCubeProgrammer():  03:18:37:920 w ap 0 reg 3 R3   0x00000002
+[4.571] spawnCubeProgrammer():  03:18:37:924 w ap 0 reg 4 R4   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:928 w ap 0 reg 5 R5   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:932 w ap 0 reg 6 R6   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:935 w ap 0 reg 7 R7   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:938 w ap 0 reg 8 R8   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:942 w ap 0 reg 9 R9   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:947 w ap 0 reg 10 R10  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:950 w ap 0 reg 11 R11  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:955 w ap 0 reg 12 R12  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:958 w ap 0 reg 13 SP   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:962 w ap 0 reg 14 LR   0x20000001
+[4.571] spawnCubeProgrammer():  03:18:37:966 w ap 0 reg 15 PC   0x2000003B
+[4.571] spawnCubeProgrammer():  03:18:37:970 w ap 0 reg 16 xPSR 0x01000000
+[4.571] spawnCubeProgrammer():  03:18:37:973 w ap 0 reg 17 MSP  0x20000AF4
+[4.571] spawnCubeProgrammer():  03:18:37:977 w ap 0 reg 18 PSP  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:37:977 run ap 0 
+[4.571] spawnCubeProgrammer():  03:18:38:114 w ap 0 @0x20001420 0x00000900 bytes Data 0x00000002
+[4.571] spawnCubeProgrammer():  03:18:38:114 W B2 in RAM @0x20001420 size 0x00000900: 0292ms
+[4.571] spawnCubeProgrammer():  03:18:38:117 r ap 0 reg 0 R0   0x00000001
+[4.571] spawnCubeProgrammer():  03:18:38:117 Wait W B1 in Flash @0x08000000 size 0x00000900: 0003ms
+[4.571] spawnCubeProgrammer():  03:18:38:122 w ap 0 reg 0 R0   0x08000900
+[4.571] spawnCubeProgrammer():  03:18:38:125 w ap 0 reg 1 R1   0x00000900
+[4.571] spawnCubeProgrammer():  03:18:38:129 w ap 0 reg 2 R2   0x20001420
+[4.571] spawnCubeProgrammer():  03:18:38:132 w ap 0 reg 3 R3   0x00000002
+[4.571] spawnCubeProgrammer():  03:18:38:136 w ap 0 reg 4 R4   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:140 w ap 0 reg 5 R5   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:144 w ap 0 reg 6 R6   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:147 w ap 0 reg 7 R7   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:150 w ap 0 reg 8 R8   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:154 w ap 0 reg 9 R9   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:158 w ap 0 reg 10 R10  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:161 w ap 0 reg 11 R11  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:165 w ap 0 reg 12 R12  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:169 w ap 0 reg 13 SP   0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:173 w ap 0 reg 14 LR   0x20000001
+[4.571] spawnCubeProgrammer():  03:18:38:177 w ap 0 reg 15 PC   0x2000003B
+[4.571] spawnCubeProgrammer():  03:18:38:181 w ap 0 reg 16 xPSR 0x01000000
+[4.571] spawnCubeProgrammer():  03:18:38:184 w ap 0 reg 17 MSP  0x20000AF4
+[4.571] spawnCubeProgrammer():  03:18:38:189 w ap 0 reg 18 PSP  0x00000000
+[4.571] spawnCubeProgrammer():  03:18:38:189 run ap 0 
+[4.571] spawnCubeProgrammer():  03:18:38:290 w ap 0 @0x20000B20 0x000006A0 bytes Data 0x00000003
+[4.571] spawnCubeProgrammer():  03:18:38:290 W B1 in RAM @0x20000B20 size 0x000006A0 : 0100ms
+[4.571] spawnCubeProgrammer():  03:18:38:294 halt ap 0 
+[4.572] spawnCubeProgrammer():  03:18:38:297 r ap 0 reg 0 R0   0x00000001
+[4.572] spawnCubeProgrammer():  03:18:38:297 Wait W B2 in flash @0x08000900 size 0x00000900: 0007ms
+[4.572] spawnCubeProgrammer():  03:18:38:301 w ap 0 reg 0 R0   0x08001200
+[4.572] spawnCubeProgrammer():  03:18:38:305 w ap 0 reg 1 R1   0x000006A0
+[4.572] spawnCubeProgrammer():  03:18:38:308 w ap 0 reg 2 R2   0x20000B20
+[4.572] spawnCubeProgrammer():  03:18:38:312 w ap 0 reg 3 R3   0x00000002
+[4.572] spawnCubeProgrammer():  03:18:38:315 w ap 0 reg 4 R4   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:320 w ap 0 reg 5 R5   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:323 w ap 0 reg 6 R6   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:327 w ap 0 reg 7 R7   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:331 w ap 0 reg 8 R8   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:335 w ap 0 reg 9 R9   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:338 w ap 0 reg 10 R10  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:342 w ap 0 reg 11 R11  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:346 w ap 0 reg 12 R12  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:350 w ap 0 reg 13 SP   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:354 w ap 0 reg 14 LR   0x20000001
+[4.572] spawnCubeProgrammer():  03:18:38:358 w ap 0 reg 15 PC   0x2000003B
+[4.572] spawnCubeProgrammer():  03:18:38:361 w ap 0 reg 16 xPSR 0x01000000
+[4.572] spawnCubeProgrammer():  03:18:38:364 w ap 0 reg 17 MSP  0x20000AF4
+[4.572] spawnCubeProgrammer():  03:18:38:368 w ap 0 reg 18 PSP  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:368 run ap 0 
+[4.572] spawnCubeProgrammer():  03:18:38:469 w ap 0 @0x200011C0 0x000006A0 bytes Data 0xFFFFFF80
+[4.572] spawnCubeProgrammer():  03:18:38:469 W B2 in RAM @0x20001420 size 0x000006A0: 0172ms
+[4.572] spawnCubeProgrammer():  03:18:38:473 r ap 0 reg 0 R0   0x00000001
+[4.572] spawnCubeProgrammer():  03:18:38:473 Wait W B1 in Flash @0x08001200 size 0x000006A0: 0004ms
+[4.572] spawnCubeProgrammer():  03:18:38:478 w ap 0 reg 0 R0   0x080018A0
+[4.572] spawnCubeProgrammer():  03:18:38:481 w ap 0 reg 1 R1   0x000006A0
+[4.572] spawnCubeProgrammer():  03:18:38:485 w ap 0 reg 2 R2   0x200011C0
+[4.572] spawnCubeProgrammer():  03:18:38:488 w ap 0 reg 3 R3   0x00000002
+[4.572] spawnCubeProgrammer():  03:18:38:493 w ap 0 reg 4 R4   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:497 w ap 0 reg 5 R5   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:501 w ap 0 reg 6 R6   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:505 w ap 0 reg 7 R7   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:508 w ap 0 reg 8 R8   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:512 w ap 0 reg 9 R9   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:515 w ap 0 reg 10 R10  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:518 w ap 0 reg 11 R11  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:523 w ap 0 reg 12 R12  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:527 w ap 0 reg 13 SP   0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:531 w ap 0 reg 14 LR   0x20000001
+[4.572] spawnCubeProgrammer():  03:18:38:534 w ap 0 reg 15 PC   0x2000003B
+[4.572] spawnCubeProgrammer():  03:18:38:539 w ap 0 reg 16 xPSR 0x01000000
+[4.572] spawnCubeProgrammer():  03:18:38:543 w ap 0 reg 17 MSP  0x20000AF4
+[4.572] spawnCubeProgrammer():  03:18:38:546 w ap 0 reg 18 PSP  0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:546 run ap 0 
+[4.572] spawnCubeProgrammer():  03:18:38:573 r ap 0 reg 0 R0   0x00000001
+[4.572] spawnCubeProgrammer():  03:18:38:573 Write elapsed time: 0887ms
+[4.572] spawnCubeProgrammer():  03:18:38:573 Segment[0] downloaded successfully
+[4.572] spawnCubeProgrammer():  03:18:38:573 
+[4.572] spawnCubeProgrammer():  
+[4.572] spawnCubeProgrammer():  03:18:38:573 File download complete
+[4.572] spawnCubeProgrammer():  03:18:38:573 Time elapsed during download operation: 00:00:01.448
+[4.572] spawnCubeProgrammer():  03:18:38:573 
+[4.572] spawnCubeProgrammer():  
+[4.572] spawnCubeProgrammer():  03:18:38:573 
+[4.572] spawnCubeProgrammer():  Verifying ...
+[4.572] spawnCubeProgrammer():  03:18:38:573 
+[4.572] spawnCubeProgrammer():  
+[4.572] spawnCubeProgrammer():  03:18:38:573 Read progress:
+[4.572] spawnCubeProgrammer():  03:18:38:573 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:626 r ap 0 @0x08000000 0x00000400 bytes Data 0x00000000
+[4.572] spawnCubeProgrammer():  03:18:38:626 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:678 r ap 0 @0x08000400 0x00000400 bytes Data 0x0000004D
+[4.572] spawnCubeProgrammer():  03:18:38:678 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:731 r ap 0 @0x08000800 0x00000400 bytes Data 0x000000FF
+[4.572] spawnCubeProgrammer():  03:18:38:731 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:784 r ap 0 @0x08000C00 0x00000400 bytes Data 0x00000078
+[4.572] spawnCubeProgrammer():  03:18:38:784 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:838 r ap 0 @0x08001000 0x00000400 bytes Data 0x00000008
+[4.572] spawnCubeProgrammer():  03:18:38:838 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:891 r ap 0 @0x08001400 0x00000400 bytes Data 0x00000002
+[4.572] spawnCubeProgrammer():  03:18:38:891 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:943 r ap 0 @0x08001800 0x00000400 bytes Data 0x0000003E
+[4.572] spawnCubeProgrammer():  03:18:38:943 Reading data...
+[4.572] spawnCubeProgrammer():  03:18:38:987 r ap 0 @0x08001C00 0x00000340 bytes Data 0x00000092
+[4.572] spawnCubeProgrammer():  03:18:38:987 
+[4.572] spawnCubeProgrammer():  
+[4.572] spawnCubeProgrammer():  03:18:38:987 Download verified successfully 
+[4.572] spawnCubeProgrammer():  03:18:38:987 
+[4.572] spawnCubeProgrammer():  
+[4.573] spawnCubeProgrammer():   ------ Switching context ----- 
+[4.580] Device_Initialise():  Target connection mode: Default
+[4.590] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[4.593] Device_Initialise():  COM frequency = 125 kHz
+[4.594] Device_Initialise():  ST-LINK Firmware version : V2J37M26
+[4.594] Device_Initialise():  Device ID: 0x466
+[4.598] Device_Initialise():  PC: 0x8001d24
+[4.601] Device_Initialise():  ST-LINK detects target voltage = 3.24 V
+[4.610] Device_Initialise():  ST-LINK device status: HALT_MODE
+[4.610] initServerContext():  ST-LINK device initialization OK
+[4.610] write():  <524> Tx: $OK#9a
+[4.611] read():  <524> Rx: $Pf=241d0008#b6
+[4.619] write():  <524> Tx: $OK#9a
+[4.620] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[4.620] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[4.620] read():  <524> Rx: $m8001d24,4#60
+[4.620] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001d24 
+[4.622] write():  <524> Tx: $0d488546#d7
+[4.622] read():  <524> Rx: $m8001d24,2#5e
+[4.623] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001d24 
+[4.625] write():  <524> Tx: $0d48#00
+[4.629] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[4.629] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[4.630] read():  <524> Rx: $T1#85
+[4.630] write():  <524> Tx: $OK#9a
+[4.630] read():  <524> Rx: $T1#85
+[4.630] write():  <524> Tx: $OK#9a
+[4.655] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[4.655] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[4.702] read():  <524> Rx: $m8001480,40#62
+[4.702] handlePacket():  Reading 0x40 bytes of memory from addr 0x8001480 
+[4.710] write():  <524> Tx: $bd4602b080bdc04680000020001802407400002048000020690000206a0000206c00002080b500afbb4b1b78002b04d1ba4b181c00f042fa6ae1b74b1b78012b#c3
+[4.710] read():  <524> Rx: $m8001798,4#3e
+[4.710] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001798 
+[4.712] write():  <524> Tx: $69000020#91
+[4.713] read():  <524> Rx: $m8001782,2#35
+[4.713] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001782 
+[4.715] write():  <524> Tx: $054b#fb
+[4.718] read():  <524> Rx: $m8001480,40#62
+[4.719] handlePacket():  Reading 0x40 bytes of memory from addr 0x8001480 
+[4.727] write():  <524> Tx: $bd4602b080bdc04680000020001802407400002048000020690000206a0000206c00002080b500afbb4b1b78002b04d1ba4b181c00f042fa6ae1b74b1b78012b#c3
+[4.727] read():  <524> Rx: $m8001798,4#3e
+[4.727] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001798 
+[4.729] write():  <524> Tx: $69000020#91
+[4.729] read():  <524> Rx: $m80014ce,2#90
+[4.729] handlePacket():  Reading 0x2 bytes of memory from addr 0x80014ce 
+[4.732] write():  <524> Tx: $b44b#2c
+[4.735] read():  <524> Rx: $m80012c0,40#8b
+[4.735] handlePacket():  Reading 0x40 bytes of memory from addr 0x80012c0 
+[4.744] write():  <524> Tx: $00afa023db055b69a023db0500225a61a023db055a69a023db0540214a405a61a023db051b699b0a7b607b68272213407b607b68002b02d0634b01221a60a023#c0
+[4.744] read():  <524> Rx: $m8001456,2#33
+[4.744] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001456 
+[4.746] write():  <524> Tx: $104b#f7
+[4.751] read():  <524> Rx: $me000ed14,4#f0
+[4.752] handlePacket():  Reading 0x4 bytes of memory from addr 0xe000ed14 
+[4.754] write():  <524> Tx: $08020000#8a
+[4.754] read():  <524> Rx: $Xe000ed14,0:#11
+[4.755] write():  <524> Tx: $OK#9a
+[4.755] read():  <524> Rx: $Xe000ed14,4:\x18\x02\x00\x00#2f
+[4.757] write():  <524> Tx: $OK#9a
+[4.758] read():  <524> Rx: $g#67
+[4.840] write():  <524> Tx: $ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00200020ffffffff241d0008000000010000000000000000000000000000000000200020fcffffff#19
+[4.840] read():  <524> Rx: $m8001d24,4#60
+[4.840] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001d24 
+[4.842] write():  <524> Tx: $0d488546#d7
+[4.842] read():  <524> Rx: $m8001d24,2#5e
+[4.842] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001d24 
+[4.845] write():  <524> Tx: $0d48#00
+[4.845] read():  <524> Rx: $me000edfc,4#54
+[4.845] handlePacket():  Reading 0x4 bytes of memory from addr 0xe000edfc 
+[4.848] write():  <524> Tx: $00000001#81
+[4.848] read():  <524> Rx: $Xe000edfc,4:\x00\x04\x00\x01#7e
+[4.850] write():  <524> Tx: $OK#9a
+[4.850] read():  <524> Rx: $g#67
+[4.930] write():  <524> Tx: $ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00200020ffffffff241d0008000000010000000000000000000000000000000000200020fcffffff#19
+[4.930] read():  <524> Rx: $m8001d24,4#60
+[4.931] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001d24 
+[4.933] write():  <524> Tx: $0d488546#d7
+[4.933] read():  <524> Rx: $m8001d24,2#5e
+[4.933] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001d24 
+[4.935] write():  <524> Tx: $0d48#00
+[4.936] read():  <524> Rx: $m8001d00,40#8a
+[4.936] handlePacket():  Reading 0x40 bytes of memory from addr 0x8001d00 
+[4.945] write():  <524> Tx: $02e07b68013b7b607b68002bf9d1c046bd4602b080bd80b500affff761fdfff7c1fbfce70d48854600f026f80c480d490d4a002302e0d458c4500433c4188c42#df
+[4.946] read():  <524> Rx: $m8001d1a,2#8a
+[4.946] handlePacket():  Reading 0x2 bytes of memory from addr 0x8001d1a 
+[4.948] write():  <524> Tx: $fff7#69
+[4.950] read():  <524> Rx: $m20000080,4#57
+[4.950] handlePacket():  Reading 0x4 bytes of memory from addr 0x20000080 
+[4.953] write():  <524> Tx: $14000920#90
+[4.957] read():  <524> Rx: $m20000048,1#58
+[4.957] handlePacket():  Reading 0x1 bytes of memory from addr 0x20000048 
+[4.960] write():  <524> Tx: $0c#93
+[4.961] read():  <524> Rx: $m20000070,4#56
+[4.961] handlePacket():  Reading 0x4 bytes of memory from addr 0x20000070 
+[4.963] write():  <524> Tx: $083e0835#d0
+[4.964] read():  <524> Rx: $m20000069,1#5b
+[4.964] handlePacket():  Reading 0x1 bytes of memory from addr 0x20000069 
+[4.967] write():  <524> Tx: $d0#94
+[4.968] read():  <524> Rx: $m2000007c,4#89
+[4.968] handlePacket():  Reading 0x4 bytes of memory from addr 0x2000007c 
+[4.971] write():  <524> Tx: $9ab00500#f1
+[4.972] read():  <524> Rx: $m2000006c,4#88
+[4.972] handlePacket():  Reading 0x4 bytes of memory from addr 0x2000006c 
+[4.974] write():  <524> Tx: $04e00834#c8
+[4.976] read():  <524> Rx: $Z1,8001d1a,2#d4
+[4.982] write():  <524> Tx: $OK#9a
+[4.982] read():  <524> Rx: $vCont;c#a8
+[4.995] handle_vCont_c():  handle_vCont_c, continue thread
+[4.996] write():  <524> Tx: $OK#9a
+[4.996] read():  <524> Rx: $T1#85
+[4.996] write():  <524> Tx: $OK#9a
+[4.996] read():  <524> Rx: $T1#85
+[4.996] write():  <524> Tx: $OK#9a
+[5.011] handleGDBConnection():  TraceCaptureStart and SWV event set to APP_FALSE (0)
+[5.028] Device_GetHaltReason():  NVIC_DFSR_REG = 0x0000000B 
+[5.036] write():  <524> Tx: %Stop:T05hwbreak:;thread:1;core:0;#7e
+[5.036] read():  <524> Rx: $vStopped#55
+[5.036] write():  <524> Tx: $OK#9a
+[5.036] read():  <524> Rx: $g#67
+[5.117] write():  <524> Tx: $000000204c000020840000200000000084000020fffffffffffffffff81f0020fffffffffffffffffffffffffffffffffffffffff81f00205b1d00081a1d00080000006100000000000000000000000000000000f81f0020fcffffff#a3
+[5.122] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[5.122] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[5.122] read():  <524> Rx: $z1,8001d1a,2#f4
+[5.124] write():  <524> Tx: $OK#9a
+[5.125] read():  <524> Rx: $m8001d1a,4#8c
+[5.125] handlePacket():  Reading 0x4 bytes of memory from addr 0x8001d1a 
+[5.129] write():  <524> Tx: $fff761fd#9a
+[5.133] read():  <524> Rx: $T1#85
+[5.133] write():  <524> Tx: $OK#9a
+[5.133] read():  <524> Rx: $T1#85
+[5.133] write():  <524> Tx: $OK#9a
+[5.134] read():  <524> Rx: $T1#85
+[5.134] write():  <524> Tx: $OK#9a
+[5.135] read():  <524> Rx: $T1#85
+[5.135] write():  <524> Tx: $OK#9a
+[5.199] read():  <524> Rx: $m20000080,4#57
+[5.199] handlePacket():  Reading 0x4 bytes of memory from addr 0x20000080 
+[5.201] write():  <524> Tx: $00000000#80
+[5.206] read():  <524> Rx: $m20000048,1#58
+[5.206] handlePacket():  Reading 0x1 bytes of memory from addr 0x20000048 
+[5.208] write():  <524> Tx: $10#61
+[5.209] read():  <524> Rx: $m20000070,4#56
+[5.209] handlePacket():  Reading 0x4 bytes of memory from addr 0x20000070 
+[5.212] write():  <524> Tx: $00000000#80
+[5.212] read():  <524> Rx: $m20000069,1#5b
+[5.212] handlePacket():  Reading 0x1 bytes of memory from addr 0x20000069 
+[5.215] write():  <524> Tx: $00#60
+[5.216] read():  <524> Rx: $m2000007c,4#89
+[5.216] handlePacket():  Reading 0x4 bytes of memory from addr 0x2000007c 
+[5.218] write():  <524> Tx: $00000000#80
+[5.219] read():  <524> Rx: $m2000006c,4#88
+[5.219] handlePacket():  Reading 0x4 bytes of memory from addr 0x2000006c 
+[5.221] write():  <524> Tx: $00000000#80
+[5.382] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[5.383] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[5.385] read():  <524> Rx: $qXfer:threads:read::0,bfb#fb
+[5.385] write():  <524> Tx: $l<?xml version="1.0"?><threads><thread id="1" core="0" name="main"></thread></threads>#f7
+[9.117] read():  <524> Rx: $vKill;a410#33
+[9.117] handlePacket():  Hidden/Unsupported v-command 'vKill', see RSP for details
+[9.117] write():  <524> Tx: $#00
+[9.118] read():  <524> Rx: $k#6b
